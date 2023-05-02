@@ -1,0 +1,65 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Spaghetti Bolognese",
+        "ingredients": [
+          {
+            "name": "Spaghetti",
+            "quantity": "1 pound"
+          },
+          {
+            "name": "Ground Beef",
+            "quantity": "1 pound"
+          },
+          {
+            "name": "Tomato Sauce",
+            "quantity": "24 oz"
+          },
+          {
+            "name": "Onion",
+            "quantity": "1 medium, chopped"
+          },
+          {
+            "name": "Garlic",
+            "quantity": "3 cloves, minced"
+          },
+          {
+            "name": "Olive Oil",
+            "quantity": "2 tablespoons"
+          },
+          {
+            "name": "Salt",
+            "quantity": "1 teaspoon"
+          },
+          {
+            "name": "Black Pepper",
+            "quantity": "1/2 teaspoon"
+          }
+        ],
+        "instructions": [
+          {
+            "step": "Cook the spaghetti according to package instructions."
+          },
+          {
+            "step": "In a large skillet, heat the olive oil over medium-high heat."
+          },
+          {
+            "step": "Add the onion and garlic, and cook until softened, about 5 minutes."
+          },
+          {
+            "step": "Add the ground beef, salt, and black pepper, and cook until browned, about 8 minutes."
+          },
+          {
+            "step": "Add the tomato sauce to the skillet and bring to a simmer."
+          },
+          {
+            "step": "Simmer the sauce for 10-15 minutes, until thickened."
+          },
+          {
+            "step": "Serve the sauce over the cooked spaghetti."
+          }
+        ]
+      }
+    ]
+  }
