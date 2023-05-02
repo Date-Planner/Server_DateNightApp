@@ -1,65 +1,1353 @@
 {
-    "recipes": [
-      {
-        "id": 1,
-        "name": "Spaghetti Bolognese",
-        "ingredients": [
-          {
-            "name": "Spaghetti",
-            "quantity": "1 pound"
-          },
-          {
-            "name": "Ground Beef",
-            "quantity": "1 pound"
-          },
-          {
-            "name": "Tomato Sauce",
-            "quantity": "24 oz"
-          },
-          {
-            "name": "Onion",
-            "quantity": "1 medium, chopped"
-          },
-          {
-            "name": "Garlic",
-            "quantity": "3 cloves, minced"
-          },
-          {
-            "name": "Olive Oil",
-            "quantity": "2 tablespoons"
-          },
-          {
-            "name": "Salt",
-            "quantity": "1 teaspoon"
-          },
-          {
-            "name": "Black Pepper",
-            "quantity": "1/2 teaspoon"
-          }
-        ],
-        "instructions": [
-          {
-            "step": "Cook the spaghetti according to package instructions."
-          },
-          {
-            "step": "In a large skillet, heat the olive oil over medium-high heat."
-          },
-          {
-            "step": "Add the onion and garlic, and cook until softened, about 5 minutes."
-          },
-          {
-            "step": "Add the ground beef, salt, and black pepper, and cook until browned, about 8 minutes."
-          },
-          {
-            "step": "Add the tomato sauce to the skillet and bring to a simmer."
-          },
-          {
-            "step": "Simmer the sauce for 10-15 minutes, until thickened."
-          },
-          {
-            "step": "Serve the sauce over the cooked spaghetti."
-          }
-        ]
-      }
-    ]
-  }
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Bolognese",
+      "ingredients": [
+        {
+          "name": "Spaghetti",
+          "quantity": "1 pound"
+        },
+        {
+          "name": "Ground Beef",
+          "quantity": "1 pound"
+        },
+        {
+          "name": "Tomato Sauce",
+          "quantity": "24 oz"
+        },
+        {
+          "name": "Onion",
+          "quantity": "1 medium, chopped"
+        },
+        {
+          "name": "Garlic",
+          "quantity": "3 cloves, minced"
+        },
+        {
+          "name": "Olive Oil",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Black Pepper",
+          "quantity": "1/2 teaspoon"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Cook the spaghetti according to package instructions."
+        },
+        {
+          "step": "In a large skillet, heat the olive oil over medium-high heat."
+        },
+        {
+          "step": "Add the onion and garlic, and cook until softened, about 5 minutes."
+        },
+        {
+          "step": "Add the ground beef, salt, and black pepper, and cook until browned, about 8 minutes."
+        },
+        {
+          "step": "Add the tomato sauce to the skillet and bring to a simmer."
+        },
+        {
+          "step": "Simmer the sauce for 10-15 minutes, until thickened."
+        },
+        {
+          "step": "Serve the sauce over the cooked spaghetti."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mexican Cornbread",
+      "ingredients": [
+        {
+          "name": "Cornmeal",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Eggs",
+          "quantity": "3 beaten"
+        },
+        {
+          "name": "Cream Style Corn",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Oil",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Pepper",
+          "quantity": "1/2 large pepper, chopped"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Onion",
+          "quantity": "1 medium, chopped"
+        },
+        {
+          "name": "Buttermilk",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Jalapeno",
+          "quantity": "Add to your spice level"
+        },
+        {
+          "name": "Shredded Cheese",
+          "quantity": "1 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Preheat oven to 415 degrees F."
+        },
+        {
+          "step": "Mix all ingredients together except cheese."
+        },
+        {
+          "step": "Layer batter, cheese, batter, cheese, batter (always start and end with batter)."
+        },
+        {
+          "step": "Bake for 40 minutes."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Party Ham Rolls",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "quantity": "1/2 stick"
+        },
+        {
+          "name": "Mustard",
+          "quantity": "1 tablespoon"
+        },
+        {
+          "name": "Poppy seeds",
+          "quantity": "1/2 tablespoon"
+        },
+        {
+          "name": "Worcestershire sauce",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Honey",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Brown sugar",
+          "quantity": "1 teaspoon"
+        },
+        {
+          "name": "Party rolls",
+          "quantity": "1 package"
+        },
+        {
+          "name": "Boiled ham",
+          "quantity": "4 ounces"
+        },
+        {
+          "name": "Swiss cheese",
+          "quantity": "3 ounces"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Prepare all of the sauce ingredients."
+        },
+        {
+          "step": "Slice rolls."
+        },
+        {
+          "step": "Place a slice of ham & cheese on each roll. Place tops back on rolls."
+        },
+        {
+          "step": "Pour sauce over all the rolls."
+        },
+        {
+          "step": "Wrap tightly with foil & refrigerate overnight."
+        },
+        {
+          "step": "Preheat oven to 325 degrees."
+        },
+        {
+          "step": "Bake for 15-20 minutes."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dijon Cheddar Bacon Spread",
+      "ingredients": [
+        {
+          "name": "Cream cheese",
+          "quantity": "8 ounces, softened"
+        },
+        {
+          "name": "Sharp cheddar cheese",
+          "quantity": "1 cup shredded"
+        },
+        {
+          "name": "Grey Poupon Dijon mustard",
+          "quantity": "1 tablespoon"
+        },
+        {
+          "name": "Real bacon bits",
+          "quantity": "3 tablespoons"
+        },
+        {
+          "name": "Green onions",
+          "quantity": "3 tablespoons sliced, divided"
+        },
+        {
+          "name": "Ritz crackers",
+          "quantity": "for serving"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Beat cream cheese & shredded cheese in medium bowl with an electric mixer on medium speed until well blended."
+        },
+        {
+          "step": "Stir in mustard, bacon & 2 tablespoons onions."
+        },
+        {
+          "step": "Transfer to serving bowl, cover & refrigerate for several hours or until chilled."
+        },
+        {
+          "step": "Let sit at room temperature for 30 minutes before serving."
+        },
+        {
+          "step": "Sprinkle with the remaining 1 tablespoon of green onions."
+        },
+        {
+          "step": "Serve with crackers."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Garlic Parmesan Broccoli",
+      "ingredients": [
+        {
+          "name": "Broccoli florets",
+          "quantity": "24 ounces"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "3 tablespoons"
+        },
+        {
+          "name": "Garlic",
+          "quantity": "3 teaspoons, minced"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1 pinch, to taste"
+        },
+        {
+          "name": "Parmesan cheese",
+          "quantity": "1/4 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Reheat oven to 425 degrees."
+        },
+        {
+          "step": "Drizzle a little olive oil on a large baking sheet, then use a paper towel to rub down the pan."
+        },
+        {
+          "step": "In a large bowl, add broccoli, olive oil, garlic, and salt to taste. Toss broccoli with a spoon until it's completely coated."
+        },
+        {
+          "step": "Pour broccoli onto the prepared baking sheet, spreading out into an even layer. Scoop out any garlic and oil left in the bowl and sprinkle it over the broccoli."
+        },
+        {
+          "step": "Bake for 10-12 minutes, or until broccoli is cooked through."
+        },
+        {
+          "step": "Sprinkle broccoli with Parmesan cheese before serving."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Crunchy Cole Slaw",
+      "ingredients": [
+        {
+          "name": "Chicken ramen noodles",
+          "quantity": "2 packages, crushed"
+        },
+        {
+          "name": "Angel hair slaw",
+          "quantity": "2 bags"
+        },
+        {
+          "name": "Red pepper",
+          "quantity": "1, chopped"
+        },
+        {
+          "name": "Grape tomatoes",
+          "quantity": "1 container"
+        },
+        {
+          "name": "English cucumbers",
+          "quantity": "2, chopped"
+        },
+        {
+          "name": "Slivered almonds",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Sunflower seeds",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Sesame sticks",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Mix all ingredients together."
+        },
+        {
+          "step": "In a separate bowl, mix together vinegar, sugar, and seasoning packets from ramen noodles."
+        },
+        {
+          "step": "Pour dressing over other ingredients and mix well."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Roasted Honey Cinnamon Butter Sweet Potatoes",
+      "ingredients": [
+        {
+          "name": "Sweet potatoes",
+          "quantity": "5, peeled & diced"
+        },
+        {
+          "name": "Butter",
+          "quantity": "1/4 cup, melted"
+        },
+        {
+          "name": "Honey",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Cinnamon",
+          "quantity": "2 teaspoons"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Preheat oven to 425 degrees."
+        },
+        {
+          "step": "In a large bowl, add sweet potatoes, melted butter, honey, and cinnamon, and toss to coat potatoes."
+        },
+        {
+          "step": "Spread into a single layer on a baking sheet."
+        },
+        {
+          "step": "Bake for 30-35 minutes, stirring halfway through."
+        },
+        {
+          "step": "Pour sauce in the bottom of the pan over potatoes and serve."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Squash Casserole",
+      "ingredients": [
+        {
+          "name": "Onion",
+          "quantity": "1, sautéed with butter"
+        },
+        {
+          "name": "Sour cream",
+          "quantity": "8 oz"
+        },
+        {
+          "name": "Cream of celery soup",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Cooked squash",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Shredded cheddar cheese",
+          "quantity": "8 oz"
+        },
+        {
+          "name": "Stove-top stuffing mix",
+          "quantity": "to taste, already cooked"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Preheat oven to 350 degrees."
+        },
+        {
+          "step": "Mix sautéed onion, sour cream, cream of celery soup, cooked squash, and shredded cheddar cheese together in a bowl."
+        },
+        {
+          "step": "Transfer mixture to a casserole dish."
+        },
+        {
+          "step": "Top with already cooked stove-top stuffing mix."
+        },
+        {
+          "step": "Bake for 45 minutes."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Broccoli Casserole",
+      "ingredients": [
+        {
+          "name": "Frozen chopped broccoli",
+          "quantity": "2 packages (10 oz each)"
+        },
+        {
+          "name": "Shredded cheddar cheese",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Eggs",
+          "quantity": "2"
+        },
+        {
+          "name": "Onion, chopped",
+          "quantity": "1 small (optional)"
+        },
+        {
+          "name": "Cream of mushroom soup",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Mayonnaise",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Ritz crackers",
+          "quantity": "2 sleeves (crushed)"
+        },
+        {
+          "name": "Butter, melted",
+          "quantity": "1 stick"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Preheat oven to 325 degrees F."
+        },
+        {
+          "step": "Mix frozen broccoli, cheddar cheese, eggs, chopped onion (optional), cream of mushroom soup, mayonnaise, salt, and pepper in a large bowl."
+        },
+        {
+          "step": "Pour the mixture into a greased 9x13-inch baking dish."
+        },
+        {
+          "step": "In a separate bowl, mix together the crushed Ritz crackers and melted butter."
+        },
+        {
+          "step": "Sprinkle the cracker mixture evenly on top of the casserole."
+        },
+        {
+          "step": "Bake for 1 hour or until the top is golden brown and the casserole is heated through."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Shrimp Soup",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "quantity": "2 sticks"
+        },
+        {
+          "name": "All-purpose flour",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Half-and-half cream",
+          "quantity": "2 pints"
+        },
+        {
+          "name": "Milk",
+          "quantity": "8 cups"
+        },
+        {
+          "name": "Knorr chicken tomato bouillon cubes",
+          "quantity": "4 cubes"
+        },
+        {
+          "name": "Celery, chopped",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Tomato paste",
+          "quantity": "6-ounce can"
+        },
+        {
+          "name": "Onion, chopped",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Cayenne pepper",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Shrimp, peeled and deveined",
+          "quantity": "2 pounds"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Melt butter in a large pot over medium heat."
+        },
+        {
+          "step": "Add chopped onion and celery and cook until tender."
+        },
+        {
+          "step": "Add flour and stir until smooth."
+        },
+        {
+          "step": "Add milk, half-and-half cream, bouillon cubes, tomato paste, and cayenne pepper."
+        },
+        {
+          "step": "Cook until slightly thickened, stirring occasionally, for about 15-30 minutes."
+        },
+        {
+          "step": "Add shrimp and simmer until cooked through, about 10 minutes."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "White Chicken Chili",
+      "ingredients": [
+        {
+          "name": "Chicken broth",
+          "quantity": "2 large boxes"
+        },
+        {
+          "name": "Rotisserie chicken, shredded",
+          "quantity": "1 whole chicken"
+        },
+        {
+          "name": "McCormick White Chicken Chili mix",
+          "quantity": "2 packages"
+        },
+        {
+          "name": "Green chilis",
+          "quantity": "2 small cans"
+        },
+        {
+          "name": "Rotel",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Navy beans, drained",
+          "quantity": "3-4 cans"
+        },
+        {
+          "name": "Sour cream",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Shredded cheese",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "In a crock pot, combine chicken broth, shredded rotisserie chicken, McCormick White Chicken Chili mix, green chilis, Rotel, and drained navy beans."
+        },
+        {
+          "step": "Cook on low heat for a couple of hours to let all the flavors meld together."
+        },
+        {
+          "step": "Serve with sour cream and shredded cheese."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Chicken Noodle Soup",
+      "ingredients": [
+        {
+          "name": "Chicken breast, cooked and shredded",
+          "quantity": "3 cups"
+        },
+        {
+          "name": "Condensed chicken soup",
+          "quantity": "1 can (10.5 oz)"
+        },
+        {
+          "name": "Chicken stock",
+          "quantity": "6 cups"
+        },
+        {
+          "name": "Milk",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Celery, chopped",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Medium carrots, sliced",
+          "quantity": "2"
+        },
+        {
+          "name": "Ranch dressing mix",
+          "quantity": "1 packet (1 oz)"
+        },
+        {
+          "name": "Bacon, crumbled",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Shredded mild cheddar cheese",
+          "quantity": "1 1/2 cups"
+        },
+        {
+          "name": "Cream cheese, softened",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Thin spaghetti or angel hair pasta, uncooked",
+          "quantity": "8 oz"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "In a large pot, bring the chicken stock to a boil. Add in the chopped celery, sliced carrots, and ranch dressing mix. Stir well."
+        },
+        {
+          "step": "Reduce heat and let simmer for 20 minutes, or until the vegetables are tender."
+        },
+        {
+          "step": "Add in the condensed chicken soup, milk, and shredded chicken. Stir well and let simmer for an additional 10 minutes."
+        },
+        {
+          "step": "Meanwhile, cook the thin spaghetti or angel hair pasta according to package instructions. Drain and set aside."
+        },
+        {
+          "step": "Add the cooked spaghetti or angel hair pasta to the soup mixture. Stir well."
+        },
+        {
+          "step": "Add the crumbled bacon, shredded cheddar cheese, and softened cream cheese to the soup. Stir well and let simmer for a few minutes, or until the cheese has melted."
+        },
+        {
+          "step": "Serve hot and enjoy!"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Swamp Soup",
+      "ingredients": [
+        {
+          "name": "Butter",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Chicken broth",
+          "quantity": "2 cans (14.5 oz each)"
+        },
+        {
+          "name": "Turnip greens",
+          "quantity": "2 cans (14.5 oz each)"
+        },
+        {
+          "name": "White beans",
+          "quantity": "4 cans (15.5 oz each)"
+        },
+        {
+          "name": "Black beans",
+          "quantity": "4 cans (15.5 oz each)"
+        },
+        {
+          "name": "Smoked sausage (Conecuh)",
+          "quantity": "2 packages (16 oz each)"
+        },
+        {
+          "name": "Onions",
+          "quantity": "2 medium"
+        },
+        {
+          "name": "Knorr vegetable soup mix",
+          "quantity": "1 packet"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Melt the butter in a large pot over medium heat."
+        },
+        {
+          "step": "Add the onions and cook until they are translucent."
+        },
+        {
+          "step": "Add the chicken broth, turnip greens, white beans, black beans, and vegetable soup mix. Stir well."
+        },
+        {
+          "step": "Slice the smoked sausage into rounds and add to the pot. Stir well."
+        },
+        {
+          "step": "Reduce heat to low and let simmer for 6 hours."
+        },
+        {
+          "step": "Serve hot and enjoy!"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Spinach, Mozzarella, Tomato & Chickpea Salad",
+      "ingredients": [
+        {
+          "name": "Fresh mozzarella balls, drained and quartered",
+          "quantity": "2 1/2 ounces"
+        },
+        {
+          "name": "Cherry tomatoes, halved",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "No salt added canned chickpeas",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Extra virgin olive oil",
+          "quantity": "2 teaspoons"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1/8 teaspoon"
+        },
+        {
+          "name": "Freshly ground pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Fresh baby spinach",
+          "quantity": "12 ounces"
+        },
+        {
+          "name": "Greek seasoning",
+          "quantity": "1-2 teaspoons (optional)"
+        },
+        {
+          "name": "Golden balsamic vinegar",
+          "quantity": "2 teaspoons (optional)"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Combine the drained and quartered fresh mozzarella balls, halved cherry tomatoes, and canned chickpeas in a medium bowl."
+        },
+        {
+          "step": "Add the extra virgin olive oil, salt, pepper, Greek seasoning, and golden balsamic vinegar to the bowl. Mix well."
+        },
+        {
+          "step": "Add the mixture to the fresh baby spinach on a plate."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Garden-Fresh Pasta Salad",
+      "ingredients": [
+        {
+          "name": "Bow-tie pasta, uncooked",
+          "quantity": "1 package (16 ounces)"
+        },
+        {
+          "name": "Broccoli florets",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Red onion, thinly sliced",
+          "quantity": "1 small"
+        },
+        {
+          "name": "Red pepper, chopped",
+          "quantity": "1 medium"
+        },
+        {
+          "name": "Cherry tomatoes, halved",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Kraft sun-dried tomato vinaigrette dressing",
+          "quantity": "1 bottle (8 ounces)"
+        },
+        {
+          "name": "Grated Parmesan cheese",
+          "quantity": "1/2 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Cook pasta as directed on the package, adding broccoli to the boiling water for the last 3 minutes of the pasta cooking time. Drain, rinse under cold running water. Drain well, place in a large bowl"
+        },
+        {
+          "step": "Add onions, peppers & tomatoes, and mix lightly. Add dressing, and toss to coat. Cover"
+        },
+        {
+          "step": "Refrigerate at least 1 hour. Stir gently before serving, and sprinkle with cheese."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Garden-Fresh Pasta Salad",
+      "ingredients": [
+        {
+          "name": "Bow-tie pasta, uncooked",
+          "quantity": "1 package (16 ounces)"
+        },
+        {
+          "name": "Broccoli florets",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Red onion, thinly sliced",
+          "quantity": "1 small"
+        },
+        {
+          "name": "Red pepper, chopped",
+          "quantity": "1 medium"
+        },
+        {
+          "name": "Cherry tomatoes, halved",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Kraft sun-dried tomato vinaigrette dressing",
+          "quantity": "1 bottle (8 ounces)"
+        },
+        {
+          "name": "Grated Parmesan cheese",
+          "quantity": "1/2 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Cook pasta as directed on the package, adding broccoli to the boiling water for the last 3 minutes of the pasta cooking time. Drain, rinse under cold running water. Drain well, place in a large bowl"
+        },
+        {
+          "step": "Add onions, peppers & tomatoes, and mix lightly. Add dressing, and toss to coat. Cover"
+        },
+        {
+          "step": "Refrigerate at least 1 hour. Stir gently before serving, and sprinkle with cheese."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Taco Pie",
+      "ingredients": [
+        {
+          "name": "Ground Chuck",
+          "quantity": "1 pound"
+        },
+        {
+          "name": "Onion, chopped",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Taco seasoning mix",
+          "quantity": "1 package"
+        },
+        {
+          "name": "Green chillies, chopped and drained",
+          "quantity": "4 ounces"
+        },
+        {
+          "name": "Skim milk",
+          "quantity": "1 1/4 cups"
+        },
+        {
+          "name": "Bisquick",
+          "quantity": "3/4 cup"
+        },
+        {
+          "name": "Eggs",
+          "quantity": "3"
+        },
+        {
+          "name": "Tomatoes, sliced",
+          "quantity": "2"
+        },
+        {
+          "name": "Shredded cheese",
+          "quantity": "1 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Preheat oven to 400 degrees F. Grease a 9-inch pie plate."
+        },
+        {
+          "step": "Cook and stir beef and onion in a skillet until brown. Drain. Stir in taco seasoning mix. Spread on the pie plate. Top with green chillies."
+        },
+        {
+          "step": "In a mixing bowl, beat milk, Bisquick, and eggs until smooth for about 1 minute on high with a mixer. Pour into the pie plate."
+        },
+        {
+          "step": "Bake for 25 minutes with tomatoes and cheese. Bake until the knife is inserted in the center and comes out clean."
+        },
+        {
+          "step": "Cool for 5 minutes and top with sour cream, tomatoes, lettuce, and cheese."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Meatloaf",
+      "ingredients": [
+        {
+          "name": "Hamburger meat",
+          "quantity": "2 pounds"
+        },
+        {
+          "name": "Uncooked oatmeal",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Milk",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Egg (slightly beaten)",
+          "quantity": "1"
+        },
+        {
+          "name": "Onion (diced)",
+          "quantity": "1 medium"
+        },
+        {
+          "name": "Green pepper",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Steak sauce",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Glaze- Tomato sauce",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Glaze- Brown sugar",
+          "quantity": "1 tablespoon"
+        },
+        {
+          "name": "Glaze- Water (use tomato sauce can)",
+          "quantity": "1/2 can"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Mix hamburger meat, oatmeal, milk, peppers, onions, egg, and steak sauce together and put in greased loaf pan."
+        },
+        {
+          "step": "Bake at 350 degrees for about 40 minutes."
+        },
+        {
+          "step": "Take out of oven and drain all of the grease off the meatloaf."
+        },
+        {
+          "step": "Mix 1/2 can of tomato sauce, brown sugar, and 1/2 can of water together to make the glaze."
+        },
+        {
+          "step": "Put glaze on top of meatloaf."
+        },
+        {
+          "step": "Return it to oven for another 20 minutes."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "One Pan Potato and Pepper Steak",
+      "ingredients": [
+        {
+          "name": "Medium potatoes (sliced 1/4 inch thick)",
+          "quantity": "4"
+        },
+        {
+          "name": "London broil (thinly sliced)",
+          "quantity": "1 pound"
+        },
+        {
+          "name": "Garlic pepper",
+          "quantity": "1 tablespoon"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Green pepper (cut into thin strips)",
+          "quantity": "1"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Microwave sliced potatoes for 6-10 minutes until tender."
+        },
+        {
+          "step": "Toss beef with garlic pepper and heat oil in a large skillet over high heat."
+        },
+        {
+          "step": "Add beef to skillet and toss for 3 minutes, then remove beef from skillet."
+        },
+        {
+          "step": "Add green pepper to skillet and toss for 3 minutes."
+        },
+        {
+          "step": "Add cooked potatoes to skillet and toss for 5 minutes."
+        },
+        {
+          "step": "Add beef back to skillet and toss until heated through."
+        },
+        {
+          "step": "Season with salt to taste and serve."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Ranch Chicken & Red Potatoes",
+      "ingredients": [
+        {
+          "name": "Boneless chicken breast",
+          "quantity": "2.5 pounds"
+        },
+        {
+          "name": "Oil",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Red potatoes (cubed)",
+          "quantity": "2 pounds"
+        },
+        {
+          "name": "Dry ranch dressing mix",
+          "quantity": "1 ounce"
+        },
+        {
+          "name": "Butter",
+          "quantity": "3 tablespoons"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "In a skillet, add oil and brown chicken on both sides."
+        },
+        {
+          "step": "Place cubed red potatoes in a crock pot and sprinkle with 1/2 of the dry ranch mix. Pour butter on top."
+        },
+        {
+          "step": "Add chicken on top of potatoes and sprinkle the rest of the ranch mix on top."
+        },
+        {
+          "step": "Cover and cook for 5 hours. Do not open!"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Million Dollar Pie",
+      "ingredients": [
+        {
+          "name": "Graham cracker crust",
+          "quantity": "2"
+        },
+        {
+          "name": "Sweetened condensed milk",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Crushed pineapples (drained)",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Cool Whip",
+          "quantity": "1 large container"
+        },
+        {
+          "name": "Lemon juice",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Coconut",
+          "quantity": "1 cup"
+        },
+        {
+          "name": "Chopped pecans",
+          "quantity": "1 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Mix all ingredients together in a bowl."
+        },
+        {
+          "step": "Pour mixture into two graham cracker crusts."
+        },
+        {
+          "step": "Chill pie in the refrigerator."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Banana Pudding",
+      "ingredients": [
+        {
+          "name": "Sugar",
+          "quantity": "1/2 cup"
+        },
+        {
+          "name": "Salt",
+          "quantity": "dash"
+        },
+        {
+          "name": "Milk",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Nilla Wafers",
+          "quantity": "33"
+        },
+        {
+          "name": "Flour",
+          "quantity": "1/3 cup"
+        },
+        {
+          "name": "Egg yolks",
+          "quantity": "3"
+        },
+        {
+          "name": "Vanilla",
+          "quantity": "1/2 teaspoon"
+        },
+        {
+          "name": "Ripe bananas",
+          "quantity": "5 (sliced)"
+        },
+        {
+          "name": "Egg whites",
+          "quantity": "3"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Nilla Wafers",
+          "quantity": "12"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Mix sugar, flour, and salt in a kettle."
+        },
+        {
+          "step": "In a bowl, mix egg yolks and milk. Pour into the kettle."
+        },
+        {
+          "step": "Cook uncovered, stirring constantly for about 10 to 12 minutes or until thick. Remove from heat and add the vanilla."
+        },
+        {
+          "step": "Put Nilla wafers and sliced bananas in a bowl layered. Pour in pudding over wafers."
+        },
+        {
+          "step": "Beat egg whites on high speed of electric mixer until soft peaks form. Gradually add 1/4 cup sugar, beating until stiff but not dry."
+        },
+        {
+          "step": "Spoon on top of pudding, spreading to cover the entire surface and sealing well to edges."
+        },
+        {
+          "step": "Bake at 350 degrees for about 15 to 20 minutes (watch carefully to avoid burning) or until golden browned."
+        },
+        {
+          "step": "Refrigerate for several hours until chilled. Top with 12 Nilla wafers."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "5 Minute Chocolate Pie",
+      "ingredients": [
+        {
+          "name": "Graham cracker pie crust",
+          "quantity": "1"
+        },
+        {
+          "name": "Cold milk",
+          "quantity": "1 1/4 cups"
+        },
+        {
+          "name": "Chocolate pudding pie filling (2 packages)",
+          "quantity": ""
+        },
+        {
+          "name": "Cool Whip (1 tub, divided)",
+          "quantity": ""
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Beat milk, pudding, and 1/2 tub of Cool Whip until mixture is thick."
+        },
+        {
+          "step": "Spread mixture evenly into pie shell."
+        },
+        {
+          "step": "Spread remaining Cool Whip over the pudding."
+        },
+        {
+          "step": "Refrigerate immediately."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Peanut Butter Fudge",
+      "ingredients": [
+        {
+          "name": "Eagle Brand milk",
+          "quantity": "3/4 cup"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Butter",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "name": "Peanut butter",
+          "quantity": "1 1/8 cups"
+        },
+        {
+          "name": "Marshmallow crème",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Vanilla",
+          "quantity": "1 teaspoon"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Grease 8x8 pan with butter."
+        },
+        {
+          "step": "In a medium saucepan over medium heat, combine milk, sugar, and butter."
+        },
+        {
+          "step": "Bring to a rolling boil and let boil for 5 minutes."
+        },
+        {
+          "step": "Remove from heat and stir in peanut butter, marshmallow crème, and vanilla, until well blended."
+        },
+        {
+          "step": "Spread into prepared dish."
+        },
+        {
+          "step": "Let cool completely before cutting into squares."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Funnel Cake",
+      "ingredients": [
+        {
+          "name": "Eggs",
+          "quantity": "3"
+        },
+        {
+          "name": "Milk",
+          "quantity": "2 cups"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "1/4 cup"
+        },
+        {
+          "name": "Self-rising flour",
+          "quantity": "3-4 cups"
+        },
+        {
+          "name": "Oil",
+          "quantity": "as needed (about 3/4 inch deep)"
+        },
+        {
+          "name": "Powdered sugar",
+          "quantity": "as needed"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Beat eggs, sugar, and milk."
+        },
+        {
+          "step": "Sift 1/2 of the flour and add to the egg mixture. Beat on high speed of mixer until smooth."
+        },
+        {
+          "step": "Add the rest of the flour. The batter should be thin enough to run through the funnel."
+        },
+        {
+          "step": "Heat oil in a skillet (about 3/4 inch deep)."
+        },
+        {
+          "step": "Pour batter into funnel and drizzle into hot oil, keeping your finger over the hole to prevent batter from running out."
+        },
+        {
+          "step": "Let the cake brown on one side and then turn it with a fork to brown on the other side."
+        },
+        {
+          "step": "Remove from oil and place on a plate."
+        },
+        {
+          "step": "Sprinkle powdered sugar on both sides."
+        }
+      ]
+    }
+  ]
+}
