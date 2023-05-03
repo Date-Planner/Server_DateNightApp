@@ -14,7 +14,7 @@ async function getWeather(req, res, next) {
     let weatherAPI = await axios.get(url);
     let forecasts = weatherAPI.data.data.map(obj => new Forecast(obj));
 
-    console.log('Forecasts:', forecasts); // mapped forecasts
+    // console.log('Forecasts:', forecasts); // mapped forecasts
 
     res.status(200).send(forecasts);
   } catch (error) {
