@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Spaghetti Bolognese",
+      "type": "main",
       "ingredients": [
         {
           "name": "Spaghetti",
@@ -64,6 +65,7 @@
     {
       "id": 2,
       "name": "Mexican Cornbread",
+      "type": "app",
       "ingredients": [
         {
           "name": "Cornmeal",
@@ -124,6 +126,7 @@
     {
       "id": 3,
       "name": "Party Ham Rolls",
+      "type": "app",
       "ingredients": [
         {
           "name": "Butter",
@@ -189,6 +192,7 @@
     {
       "id": 4,
       "name": "Dijon Cheddar Bacon Spread",
+      "type": "app",
       "ingredients": [
         {
           "name": "Cream cheese",
@@ -239,6 +243,7 @@
     {
       "id": 5,
       "name": "Garlic Parmesan Broccoli",
+      "type": "app",
       "ingredients": [
         {
           "name": "Broccoli florets",
@@ -285,6 +290,7 @@
     {
       "id": 6,
       "name": "Crunchy Cole Slaw",
+      "type": "app",
       "ingredients": [
         {
           "name": "Chicken ramen noodles",
@@ -334,6 +340,7 @@
     {
       "id": 7,
       "name": "Roasted Honey Cinnamon Butter Sweet Potatoes",
+      "type": "app",
       "ingredients": [
         {
           "name": "Sweet potatoes",
@@ -373,6 +380,7 @@
     {
       "id": 8,
       "name": "Squash Casserole",
+      "type": "app",
       "ingredients": [
         {
           "name": "Onion",
@@ -420,6 +428,7 @@
     {
       "id": 9,
       "name": "Broccoli Casserole",
+      "type": "app",
       "ingredients": [
         {
           "name": "Frozen chopped broccoli",
@@ -486,6 +495,7 @@
     {
       "id": 10,
       "name": "Shrimp Soup",
+      "type": "main",
       "ingredients": [
         {
           "name": "Butter",
@@ -552,6 +562,7 @@
     {
       "id": 11,
       "name": "White Chicken Chili",
+      "type": "main",
       "ingredients": [
         {
           "name": "Chicken broth",
@@ -601,6 +612,7 @@
     {
       "id": 12,
       "name": "Chicken Noodle Soup",
+      "type": "main",
       "ingredients": [
         {
           "name": "Chicken breast, cooked and shredded",
@@ -674,6 +686,7 @@
     {
       "id": 13,
       "name": "Swamp Soup",
+      "type": "main",
       "ingredients": [
         {
           "name": "Butter",
@@ -732,6 +745,7 @@
     {
       "id": 14,
       "name": "Spinach, Mozzarella, Tomato & Chickpea Salad",
+      "type": "main",
       "ingredients": [
         {
           "name": "Fresh mozzarella balls, drained and quartered",
@@ -785,6 +799,7 @@
     {
       "id": 15,
       "name": "Garden-Fresh Pasta Salad",
+      "type": "app",
       "ingredients": [
         {
           "name": "Bow-tie pasta, uncooked",
@@ -830,6 +845,7 @@
     {
       "id": 16,
       "name": "Taco Pie",
+      "type": "main",
       "ingredients": [
         {
           "name": "Ground Chuck",
@@ -889,6 +905,7 @@
     {
       "id": 17,
       "name": "Meatloaf",
+      "type": "main",
       "ingredients": [
         {
           "name": "Hamburger meat",
@@ -955,6 +972,7 @@
     {
       "id": 18,
       "name": "One Pan Potato and Pepper Steak",
+      "type": "main",
       "ingredients": [
         {
           "name": "Medium potatoes (sliced 1/4 inch thick)",
@@ -1004,6 +1022,7 @@
     {
       "id": 19,
       "name": "Ranch Chicken & Red Potatoes",
+      "type": "main",
       "ingredients": [
         {
           "name": "Boneless chicken breast",
@@ -1044,6 +1063,7 @@
     {
       "id": 20,
       "name": "Million Dollar Pie",
+      "type": "dessert",
       "ingredients": [
         {
           "name": "Graham cracker crust",
@@ -1089,6 +1109,7 @@
     {
       "id": 21,
       "name": "Banana Pudding",
+      "type": "dessert",
       "ingredients": [
         {
           "name": "Sugar",
@@ -1165,6 +1186,7 @@
     {
       "id": 22,
       "name": "5 Minute Chocolate Pie",
+      "type": "dessert",
       "ingredients": [
         {
           "name": "Graham cracker pie crust",
@@ -1201,6 +1223,7 @@
     {
       "id": 23,
       "name": "Peanut Butter Fudge",
+      "type": "dessert",
       "ingredients": [
         {
           "name": "Eagle Brand milk",
@@ -1251,6 +1274,7 @@
     {
       "id": 24,
       "name": "Funnel Cake",
+      "type": "dessert",
       "ingredients": [
         {
           "name": "Eggs",
