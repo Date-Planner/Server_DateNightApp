@@ -1,7 +1,6 @@
 'use strict';
 const axios = require('axios');
-
-// Hayden 
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 require('dotenv').config();
 const express = require('express');
@@ -14,6 +13,10 @@ const mainRecipes = require('./assets/recipes/main/recipe.json');
 const getWeather = require('./weather');
 
 const PORT = process.env.PORT || 3002;
+
+
+
+// Hayden *******************************************************
 
 app.get('/main', (request, response) => {
   const filteredRecipes = mainRecipes.recipes.filter(recipe => recipe.type === "main");
@@ -36,6 +39,8 @@ app.get('/dessert', (request, response) => {
   response.status(200).send(randomRecipe);
 });
 
+
+// kenya *******************************************************
 app.get('/weather',  async(req, res, next) => {
   try {
     let lat = req.query.lat;
@@ -66,9 +71,7 @@ class Forecast {
   }
 }
 
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
-
-// Kenya 
+// Kao *******************************************************
 
 
 
@@ -85,26 +88,7 @@ app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 
 
-
-
-// Kao 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Coriana
+// Coriana *******************************************************
 
 
 
@@ -123,4 +107,4 @@ app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 
 
-// Cisco 
+// Cisco *******************************************************
