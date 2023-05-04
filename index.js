@@ -84,28 +84,12 @@ app.get('/movies', async (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Coriana *******************************************************
 
 app.get('/go-out-food', (req, res, next) => {
 
   const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurant&latitude=37.786882&longitude=-122.399972`;
-  const apiKey ='VyHjgfW3W8ygv8tKF9Jaum5Dda4PP2yS7jRTETtsJs-jOBl7RHejNE4npR6wV7i0GAGxNOffXelHbMSwmf2sKosd-yiwxWbh8917YO7ICHqebJGR9b9X4DfqefJCZHYx'
-  //process.env.YELP_API_KEY;
+  const apiKey = process.env.YELP_API_KEY;
   
   axios.get(yelpUrl, {
     headers: {
