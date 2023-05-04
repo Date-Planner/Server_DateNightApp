@@ -1,6 +1,5 @@
 'use strict';
 const axios = require('axios');
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 require('dotenv').config();
 const express = require('express');
@@ -14,6 +13,7 @@ const getWeather = require('./weather');
 
 const PORT = process.env.PORT || 3002;
 
+app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
 
 // Hayden *******************************************************
@@ -46,16 +46,16 @@ app.get('/weather',  async(req, res, next) => {
     let lat = req.query.lat;
     let lon = req.query.lon;
     let url = `http://api.weatherbit.io/v2.0/forecast/daily?key=${process.env.WEATHERBIT_API_KEY}&lat=${lat}&lon=${lon}`;
-
+    
     // check if endpoint 'weather' works on Thunder lat 47.60621 lon -122.33207
     // res.status(200).send(lat,lon);
     console.log('URL:', url); // request URL
-
+    
     let weatherAPI = await axios.get(url);
     let forecasts = weatherAPI.data.data.map(obj => new Forecast(obj));
-
+    
     console.log('Forecasts:', forecasts); // mapped forecasts
-
+    
     res.status(200).send(forecasts);
   } catch (error) {
     next(error);
@@ -72,6 +72,18 @@ class Forecast {
 }
 
 // Kao *******************************************************
+app.get('/movies', async (req, res) => {
+  let genID = req.query.genID;
+  try {
+    let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.DB_MOVIE_URL}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_date.gte=2013-01-01&primary_release_date.lte=2023-12-30&vote_average.gte=6&with_genres=${genID}`);
+    res.send(data.data.results);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send('Unable to retrieve movies data');
+  }
+});
+
+
 
 
 
