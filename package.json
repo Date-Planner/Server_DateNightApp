@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Date-Planner/Server_DateNightApp#readme",
   "dependencies": {
+    "api": "^5.0.8",
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

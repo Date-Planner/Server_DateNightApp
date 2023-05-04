@@ -48,5 +48,25 @@ class Forecast {
   }
 }
 
+app.get('/go-out-food', (req, res, next) => {
+
+const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurant&latitude=37.786882&longitude=-122.399972`;
+const apiKey ='VyHjgfW3W8ygv8tKF9Jaum5Dda4PP2yS7jRTETtsJs-jOBl7RHejNE4npR6wV7i0GAGxNOffXelHbMSwmf2sKosd-yiwxWbh8917YO7ICHqebJGR9b9X4DfqefJCZHYx'
+//process.env.YELP_API_KEY;
+
+axios.get(yelpUrl, {
+  headers: {
+    Authorization: `Bearer ${apiKey}`
+  }
+})
+  .then(response => {
+    res.status(200).send(response.data);
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+})
+
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
