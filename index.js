@@ -5,15 +5,29 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
+const mongoose = require('mongoose');
+const Memory = require('./models/memory');
+
 const app = express();
 app.use(cors());
+
 
 const mainRecipes = require('./assets/recipes/main/recipe.json');
 const getWeather = require('./weather');
 
 const PORT = process.env.PORT || 3002;
 
+app.use(express.json());
+
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
+mongoose.connect('mongodb+srv://userAdmin:N30zudrhQF4yyBCs@cluster0.6pxjsgt.mongodb.net/?retryWrites=true&w=majority');
+
+const db = mongoose.connection;  
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', function() {
+  console.log('Mongoose is Connected');
+});
 
 
 // Hayden *******************************************************
@@ -38,6 +52,8 @@ app.get('/dessert', (request, response) => {
   const randomRecipe = filteredRecipes[randomIndex];
   response.status(200).send(randomRecipe);
 });
+
+
 
 
 // kenya *******************************************************
@@ -74,11 +90,12 @@ class Forecast {
 // Kao *******************************************************
 app.get('/movies', async (req, res) => {
   let genID = req.query.genID;
+  console.log(genID);
   try {
     let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.DB_MOVIE_URL}&with_original_language=en&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_date.gte=2010-01-01&primary_release_date.lte=2022-12-31&vote_average.gte=6&with_genres=${genID}`);
     const randomIndex = Math.floor(Math.random() * data.data.results.length);
     let randomMovie = data.data.results[randomIndex];
-    randomMovie = new FilteredMovie(randomMovie)
+    randomMovie = new FilteredMovie(randomMovie);
     res.status(200).send(randomMovie);
   } catch (error) {
     console.error(error);
@@ -107,29 +124,62 @@ app.get('/go-out-food', (req, res, next) => {
       console.log(error);
     });
   })
+  
+  // Cisco *******************************************************
 
-class FilteredMovie{
-  constructor(movieObj){
-    this.movieTitle = movieObj.original_title,
-    this.movieReleaseDate = movieObj.release_date,
-    this.movieDescription = movieObj.overview,
-    this.movieImage = 'https://image.tmdb.org/t/p/w500' + movieObj.poster_path
+  class FilteredMovie{
+    constructor(movieObj){
+      this.title = movieObj.original_title,
+      this.releaseDate = movieObj.release_date,
+      this.description = movieObj.overview,
+      this.poster = 'https://image.tmdb.org/t/p/w500' + movieObj.poster_path
+      this.genre = movieObj.genre_ids
+    }
   }
-}
 
+  app.get('/memories', async (request, response) => { 
+    try {
+      let allMemories = await Memory.find({}); 
+      response.status(200).send(allMemories); 
+    } catch (error) {
+      response.status(500).send('error retrieving memories');
+    }
+  });
 
+  app.post('/memories', async (request, response) => {
 
+  try {
+    let memory  = request.body;
+    let newMemory = await Memory.create(memory);
+    response.status(200).send(newMemory);
+  } catch (error) {
+    response.status(500).send('error creating memory');
+  }
+});
 
+app.delete('/memories/:id', async (request, response) => {
 
+  try {
+    let id = request.params.id;
+    console.log(id);
+    let deletedMemory = await Memory.findByIdAndDelete(id); 
+    response.status(200).send(`${id} deleted`);
+  } catch (error) {
+    console.error(error);
+    response.status(500).send(`Error deleting ${id}`);
 
+  }
+});
 
-
-
-
-
-
-
-
-
-
-// Cisco *******************************************************
+app.put('/memories/:id', async (request, response) {
+  let id = request.params.id; 
+  try {
+    let memoryInput = request.body; 
+    const updateOptions = { new: true, overwrite: true }; 
+    let updatedMemory = await Memory.findByIdAndUpdate(id, memoryInput, updateOptions ); 
+    response.status(200).send(updatedMemory);
+  } catch (error) {
+    console.error(error);
+    response.status(500).send(`Error updating ${id}`);
+  }
+});
