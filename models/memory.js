@@ -5,7 +5,7 @@ const mongoose =  require('mongoose');
 const { Schema } = mongoose;
 
 const memorySchema = new Schema({
-    date: { type: Number, require: true},
+    date: { type: String, require: true},
     movie: { type: String, require: false},
     app: { type: String, require: false},
     main: { type: String, require: false},

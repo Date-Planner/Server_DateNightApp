@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
-mongoose.connect('mongodb+srv://userAdmin:N30zudrhQF4yyBCs@cluster0.6pxjsgt.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(process.env.DATABASE_URL);
 
 const db = mongoose.connection;  
 db.on('error', console.error.bind(console, 'connection error'));
@@ -171,7 +171,7 @@ app.delete('/memories/:id', async (request, response) => {
   }
 });
 
-app.put('/memories/:id', async (request, response) {
+app.put('/memories/:id', async (request, response) => {
   let id = request.params.id; 
   try {
     let memoryInput = request.body; 
