@@ -108,9 +108,14 @@ app.get('/movies', async (req, res) => {
 
 app.get('/go-out-food', (req, res, next) => {
 
-  const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurant&latitude=37.786882&longitude=-122.399972`;
+  let lon = req.query.lon;
+  let lat = req.query.lat;
+  let foodType = req.query.foodType;
+  // const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=tacos&categories=restaurants&latitude=37.786882&longitude=-122.399972`;
   const apiKey = process.env.YELP_API_KEY;
   
+  const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=${foodType}&latitude=${lat}&longitude=${lon}&categories=restaurants`;
+
   axios.get(yelpUrl, {
     headers: {
       Authorization: `Bearer ${apiKey}`
@@ -119,6 +124,7 @@ app.get('/go-out-food', (req, res, next) => {
     .then(response => {
       res.status(200).send(response.data);
       console.log(response.data);
+      console.log(yelpUrl);
     })
     .catch(error => {
       console.log(error);
