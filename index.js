@@ -75,8 +75,11 @@ class Forecast {
 app.get('/movies', async (req, res) => {
   let genID = req.query.genID;
   try {
-    let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.DB_MOVIE_URL}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_date.gte=2013-01-01&primary_release_date.lte=2023-12-30&vote_average.gte=6&with_genres=${genID}`);
-    res.send(data.data.results);
+    let data = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.DB_MOVIE_URL}&with_original_language=en&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&primary_release_date.gte=2010-01-01&primary_release_date.lte=2022-12-31&vote_average.gte=6&with_genres=${genID}`);
+    const randomIndex = Math.floor(Math.random() * data.data.results.length);
+    let randomMovie = data.data.results[randomIndex];
+    randomMovie = new FilteredMovie(randomMovie)
+    res.status(200).send(randomMovie);
   } catch (error) {
     console.error(error);
     res.status(500).send('Unable to retrieve movies data');
@@ -105,7 +108,14 @@ app.get('/go-out-food', (req, res, next) => {
     });
   })
 
-
+class FilteredMovie{
+  constructor(movieObj){
+    this.movieTitle = movieObj.original_title,
+    this.movieReleaseDate = movieObj.release_date,
+    this.movieDescription = movieObj.overview,
+    this.movieImage = 'https://image.tmdb.org/t/p/w500' + movieObj.poster_path
+  }
+}
 
 
 
