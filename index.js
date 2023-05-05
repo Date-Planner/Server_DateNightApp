@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const mongoose = require('mongoose');
 const Memory = require('./models/memory');
+const verifyUser = require('./authorize')
 
 const app = express();
 app.use(cors());
@@ -65,7 +66,7 @@ app.get('/weather',  async(req, res, next) => {
     
     // check if endpoint 'weather' works on Thunder lat 47.60621 lon -122.33207
     // res.status(200).send(lat,lon);
-    console.log('URL:', url); // request URL
+    // console.log('URL:', url); // request URL
     
     let weatherAPI = await axios.get(url);
     let forecasts = weatherAPI.data.data.map(obj => new Forecast(obj));
@@ -123,8 +124,8 @@ app.get('/go-out-food', (req, res, next) => {
   })
     .then(response => {
       res.status(200).send(response.data);
-      console.log(response.data);
-      console.log(yelpUrl);
+      // console.log(response.data);
+      // console.log(yelpUrl);
     })
     .catch(error => {
       console.log(error);
@@ -143,9 +144,13 @@ app.get('/go-out-food', (req, res, next) => {
     }
   }
 
+  
+  // app.use(verifyUser);
+
   app.get('/memories', async (request, response) => { 
     try {
-      let allMemories = await Memory.find({}); 
+      let allMemories = await Memory.find({});
+      // let allMemories = await Memory.find({email: request.user.email}); 
       response.status(200).send(allMemories); 
     } catch (error) {
       response.status(500).send('error retrieving memories');
@@ -167,7 +172,7 @@ app.delete('/memories/:id', async (request, response) => {
 
   try {
     let id = request.params.id;
-    console.log(id);
+    // console.log(id);
     let deletedMemory = await Memory.findByIdAndDelete(id); 
     response.status(200).send(`${id} deleted`);
   } catch (error) {
@@ -179,6 +184,7 @@ app.delete('/memories/:id', async (request, response) => {
 
 app.put('/memories/:id', async (request, response) => {
   let id = request.params.id; 
+  console.log('testing');
   try {
     let memoryInput = request.body; 
     const updateOptions = { new: true, overwrite: true }; 
