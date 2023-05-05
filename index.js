@@ -81,8 +81,8 @@ class Forecast {
   constructor(forecastData) {
     // this.date = forecastData.datetime;
     this.description = forecastData.weather.description;
-    this.minTemp = forecastData.min_temp;
-    this.maxTemp = forecastData.max_temp;
+    this.minTemp = `${((forecastData.min_temp * 9 / 5) + 32)} \u00B0 F`;
+    this.maxTemp = `${((forecastData.max_temp * 9 / 5) + 32)} \u00B0 F`;
     this.icon = forecastData.weather.icon;
   }
 }
