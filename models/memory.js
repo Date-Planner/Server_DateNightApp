@@ -10,8 +10,11 @@ const memorySchema = new Schema({
     app: { type: String, require: false},
     main: { type: String, require: false},
     dessert: { type: String, require: false},
-    restaurant: { type: String, require: false},
-    note: { type: String, require: false},
+    bushinessName: { type: String, require: false},
+    bushinessPrice: { type: String, require: false},
+    bushinessUrl: { type: String, require: false},
+    fav: { type: Number, require: true},
+    email: String
 
 });
 
